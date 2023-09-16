@@ -1,0 +1,13 @@
+{
+    "master_host": "http://127.0.0.1",
+    "local": {
+        "cookieUrl":"http://127.0.0.1/",
+        "admin": "這裡填寫本地合約admin錢包地址",
+        "private_key": "這裡填寫本地合約admin錢包私鑰地址",
+        "MorphingBlock": {
+            "contract": "這裡填寫合約地址",
+            "abiPath": "./contracts/MorphingBlock.sol/MorphingBlock.json"
+        },
+        "provider_url": "http://127.0.0.1:8545"
+    }
+}

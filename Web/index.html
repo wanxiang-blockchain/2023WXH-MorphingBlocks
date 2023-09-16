@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.css">
+		<title>MorphingBlocks-佛教功德上鏈Web3場景演示</title>
+	</head>
+
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li>
+						<a data-href="gdl">功德上鏈</a>
+					</li>
+					<li>
+						<a data-href="gdz">功德主</a>
+					</li>
+					<li>
+						<a data-href="gdfq">鏈上法器</a>
+					</li>
+					<li>
+						<a data-href="gdb">功德榜</a>
+					</li>
+
+				</ul>
+			</nav>
+		</header>
+		<div class="main">
+			<section id="gdl" class="content" style="display: block;">
+				<div class="top">功德上鏈</div>
+				<div class="center">
+					<div class="alert">
+						通過功德箱投幣募集善款並增加功德
+					</div>
+					<div class="start">
+						<span class="btn-go">投幣捐助</span>
+					</div>
+					<div class="run">
+						<div class="gd">
+							<div class="an">功德+1</div>
+							<div class="bg">
+								<div class="font">功德</div>
+							</div>
+						</div>
+						<form class="form">
+							<div class="gd-info">功德：<span id="sp_num"></span></div>
+							<br />
+							<label for="name">姓名：</label>
+							<input class="input" type="text" id="name" name="name" readonly="readonly" required>
+							<br />
+							<label for="wallet">錢包：</label>
+							<input class="input" type="text" id="wallet" name="wallet" required>
+							<br />
+							<input class="btn un" type="button">
+						</form>
+					</div>
+				</div>
+				<div class="bottom"></div>
+			</section>
+			<section id="gdz" class="content" style="display: none;">
+				<div class="top">功德主</div>
+				<div class="center">
+					<div class="alert">
+						本次功德主所持鏈上數字功德牌
+					</div>
+					<div class="column-container">
+						<div class="column">
+							<img src="img/fx.jpg" />
+							<label>Token ID:0x123456***789</label>
+							<p>陳佩玉居士</p>
+						</div>
+						<div class="column">
+							<img src="img/ft.jpg" />
+							<label>Token ID:0xabcdef***xyz</label>
+							<p>林俊宏居士</p>
+						</div>
+						<div class="column">
+							<img src="img/nz.jpg" />
+							<label>Token ID:0x987654***321</label>
+							<p>張美玲居士</p>
+						</div>
+					</div>
+				</div>
+				<div class="bottom"></div>
+			</section>
+
+			<section id="gdfq" class="content" style="display: none;">
+				<div class="top">鏈上法器</div>
+				<div class="center">
+					<div class="alert">
+						法會后將對其進行慈善拍賣
+					</div>
+					<div class="product-container">
+						<img src="img/m.jpg" alt="功德木魚" class="product-image">
+						<h2 class="product-name">功德木魚</h2>
+						<p class="product-description">
+							在佛教中，木魚是一種重要的樂器，主要用於冥想、念佛、宗教儀式和教義傳承。敲擊木魚的聲音有助於修行者保持警覺和專注，尤其在念佛修行中，每次敲擊代表一遍佛號，協助維持連貫的念佛節奏。此外，木魚也常在寺廟儀式中使用，僧侶和修行者用它進行誦經和祈禱，以示虔誠。同時，木魚的聲音也被用來強調特定的教義或提醒人們保持警覺，以協助進入內心平靜的狀態。總之，木魚在佛教中被視為一種有助於冥想、宗教儀式和佛法傳授的重要工具，其聲音有助於引導信眾和修行者進入內心的宁靜與虔诚。
+						</p>
+						<p class="additional-info">
+							法器已由法師開光，已通過線上加密綁定本次法會功德合約。
+						</p>
+					</div>
+					<div class="product-container">
+						<img src="img/x.jpg" alt="蓮花銅磬" class="product-image">
+						<h2 class="product-name">蓮花銅磬</h2>
+						<p class="product-description">
+							在佛教中，磬是一種重要的儀器，主要用於冥想、禪修和宗教儀式。敲擊磬的聲音有助於冥想者集中注意力，達到內心的寧靜與平靜。此外，磬也在儀式中用於表示儀式的開始和結束，或在誦經和祈禱期間提供音樂背景。它還可以用來傳授教義和提醒聽眾注意，以強調特定的佛教思想。總之，磬在佛教中被視為一種有著精神意義的工具，有助於幫助人們實現冥想、儀式和宗教實踐中的內在平靜、警覺和專注。
+						</p>
+						<p class="additional-info">
+							法器已由法師開光，已通過線上加密綁定本次法會功德合約。
+						</p>
+					</div>
+				</div>
+				<div class="bottom"></div>
+			</section>
+
+			<section id="gdb" class="content" style="display: none;">
+				<div class="top">功德榜</div>
+				<div class="center">
+					<table class="table">
+						<thead>
+							<tr>
+								<th>捐助排名</th>
+								<th>捐助人</th>
+								<th>捐助金額</th>
+								<th>捐助時間</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>陳佩玉居士</td>
+								<td>2.36 eth</td>
+								<td>2023/07/20</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>林俊宏居士</td>
+								<td>2.18 eth</td>
+								<td>2023/07/15</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>張美玲居士</td>
+								<td>2.15 eth</td>
+								<td>2023-09-07</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>郭文靜居士</td>
+								<td>2.08 eth</td>
+								<td>2023/07/14</td>
+							</tr>
+							<tr>
+								<td>5</td>
+								<td>李宗翰居士</td>
+								<td>2.07 eth</td>
+								<td>2023/07/11</td>
+							</tr>
+							<tr>
+								<td>6</td>
+								<td>吳慧婷居士</td>
+								<td>2.06 eth</td>
+								<td>2023/07/05</td>
+							</tr>
+							<tr>
+								<td>7</td>
+								<td>黃明杰居士</td>
+								<td>2.05 eth</td>
+								<td>2023/07/03</td>
+							</tr>
+							<tr>
+								<td>8</td>
+								<td>楊雅婷居士</td>
+								<td>2.03 eth</td>
+								<td>2023/06/29</td>
+							</tr>
+							<tr>
+								<td>9</td>
+								<td>蔡家豪居士</td>
+								<td>2.01 eth</td>
+								<td>2023/06/26</td>
+							</tr>
+							<tr>
+								<td>10</td>
+								<td>劉怡君居士</td>
+								<td>1.99 eth</td>
+								<td>2023/06/20</td>
+							</tr>
+							<tr>
+								<td>11</td>
+								<td>許志偉居士</td>
+								<td>1.97 eth</td>
+								<td>2023/06/18</td>
+							</tr>
+							<tr>
+								<td>12</td>
+								<td>鄭雅琪居士</td>
+								<td>1.96 eth</td>
+								<td>2023/06/14</td>
+							</tr>
+							<tr>
+								<td>13</td>
+								<td>王信宏居士</td>
+								<td>1.94 eth</td>
+								<td>2023/06/10</td>
+							</tr>
+							<tr>
+								<td>14</td>
+								<td>梁雅雯居士</td>
+								<td>1.92 eth</td>
+								<td>2023/06/08</td>
+							</tr>
+							<tr>
+								<td>15</td>
+								<td>賴孟軒居士</td>
+								<td>1.91 eth</td>
+								<td>2023/06/05</td>
+							</tr>
+							<tr>
+								<td>16</td>
+								<td>蘇婷婷居士</td>
+								<td>1.90 eth</td>
+								<td>2023/06/02</td>
+							</tr>
+							<tr>
+								<td>17</td>
+								<td>陳宗翰居士</td>
+								<td>1.89 eth</td>
+								<td>2023/05/30</td>
+							</tr>
+							<tr>
+								<td>18</td>
+								<td>林怡婷居士</td>
+								<td>1.88 eth</td>
+								<td>2023/05/25</td>
+							</tr>
+							<tr>
+								<td>19</td>
+								<td>黃志明居士</td>
+								<td>1.86 eth</td>
+								<td>2023/05/22</td>
+							</tr>
+							<tr>
+								<td>20</td>
+								<td>李靜怡居士</td>
+								<td>1.85 eth</td>
+								<td>2023/05/19</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="bottom"></div>
+			</section>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/jquery.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/ethers.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/script.js" charset="utf-8"></script>
+
+</html>
